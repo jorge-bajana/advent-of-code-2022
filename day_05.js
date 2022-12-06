@@ -17,7 +17,6 @@ const inputFormatted = (inputFile) => {
   const moves = lines[1].split('\n')
     .map(line => {
       const [, repeater, _, from, __, to] = line.split(/\s+/)
-      // Repeat each move repeater times
       return [Number(repeater), Number(from), Number(to)]
     })
     .slice(0, -1)
