@@ -112,7 +112,7 @@ const part2 = (inputFile, ROUNDS) => {
       }
     })
     i++
-  }*
+  }
   return monkeys.map(m => m.inspects).sort((a, b) => b - a).slice(0, 2).reduce((a, b) => a * b)
 }
 
